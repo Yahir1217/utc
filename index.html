@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-fP3Gw1CiZdApNm0xM27O27PoH/ijHhd62Li4u9HzphM1e3vr8Cyb7hUy31T7+S4X" crossorigin="anonymous">
+
+  <!-- CSS Personalizado -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('fondo'); /* Reemplaza 'background.jpg' con la ruta de tu imagen de fondo */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    .barras-laterales {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      width: 50px;
+      background-color: white;
+      z-index: 1000;
+    }
+    .barra-izquierda {
+      left: 0;
+    }
+    .barra-derecha {
+      right: 0;
+    }
+    .perfil {
+      padding: 50px 0;
+      text-align: center;
+    }
+    .perfil img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      transition: transform 0.3s ease;
+    }
+    .perfil img:hover {
+      transform: scale(1.1);
+    }
+    .actividad {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      overflow: hidden;
+    }
+    .actividad img {
+      transition: transform 0.3s ease;
+    }
+    .actividad img:hover {
+      transform: scale(1.1);
+    }
+    .actividad .descripcion {
+      padding: 20px;
+    }
+    .open-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #007bff;
+  }
+  </style>
+</head>
+<body>
+
+<!-- Barras laterales -->
+<div class="barras-laterales barra-izquierda"></div>
+<div class="barras-laterales barra-derecha"></div>
+
+<!-- Perfil -->
+<!-- Perfil -->
+<section id="perfil" class="container perfil">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="perfil.png" class="img-fluid" alt="Tu Foto">
+      </div>
+      <div class="col-md-8">
+        <h2>YAHIR NAVA GANDARA</h2>
+        <p>Correo: al05-018-0321@utlacosta.edu.mx<br>
+        Teléfono: +323-123-91-74</p>
+        <!-- Nuevo apartado para el nombre del maestro y la materia -->
+        <h3>Maestro</h3>
+        <p>Héctor H. Domínguez</p>
+        <h3>Materia</h3>
+        <p>SEGURIDAD EN EL DESARROLLO DE APLICACIONES</p>
+      </div>
+    </div>
+  </section>
+  
+
+<!-- Actividad 1 -->
+<section id="actividad1" class="container actividad">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="actividad1.png" class="img-fluid" alt="Actividad 1">
+    </div>
+    <div class="col-md-6 descripcion">
+      <h2>Actividad 1</h2>
+      <i class="open-icon fas fa-file-word" onclick="abrirDocumento('documento1')"></i>
+      <p>En esta actividad, los alumnos implementaron un formato de Práctica de Ejercicios sobre Seguridad Informática. Para ello, expusieron ejemplos reales de diversos tipos de ataques informáticos, como phishing, ransomware, ingeniería social y ataques de denegación de servicio (DDoS). Cada ejemplo incluyó detalles específicos como lugar, fecha, noticias y fuentes, siguiendo el formato APA. Además, se proporcionó una explicación detallada de las medidas de protección y prevención implementadas para evitar estos ataques. Esta actividad permitió a los alumnos comprender los riesgos de seguridad informática y aprender cómo protegerse contra ellos.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Actividad 2 -->
+<section id="actividad2" class="container actividad">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="actividad2.png" class="img-fluid" alt="Actividad 2">
+    </div>
+    <div class="col-md-6 descripcion">
+      <h2>Actividad 2</h2>
+      <i class="open-icon fas fa-file-word" onclick="abrirDocumento('documento2')"></i>
+      <p>En esta actividad, se exploraron y describieron diversas guías de estilo y convenciones de codificación utilizadas en diferentes lenguajes de programación, como Java, C#, Python, JavaScript, C++, Ruby y PHP, así como para HTML/CSS. Cada conjunto de pautas tiene un propósito específico, como mejorar la legibilidad, consistencia y eficiencia del código en su respectivo entorno de desarrollo. Estas guías son seguidas por los desarrolladores para garantizar la coherencia en la estructura, formato y estilo del código, facilitando así la colaboración y el mantenimiento a largo plazo de los proyectos.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Examen -->
+<section id="examen" class="container actividad">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="examen.jpg" class="img-fluid" alt="Examen">
+    </div>
+    <div class="col-md-6 descripcion">
+      <h2>Examen</h2>
+      <p>En esta sección, encontrarás una recopilación exhaustiva de exámenes y evaluaciones que demuestran mi dominio en diversas áreas de estudio. Cada examen y evaluación refleja mi capacidad para comprender, analizar y aplicar conceptos clave en diferentes contextos académicos y profesionales. Estos documentos muestran mi dedicación al aprendizaje y mi capacidad para enfrentar desafíos intelectuales con éxito. Explore este portafolio para obtener una visión detallada de mis habilidades y logros en materia de evaluación y rendimiento académico.</p>
+    </div>
+  </div>
+</section>
+<script>
+    function abrirDocumento(documento) {
+      let rutaDocumento;
+      switch (documento) {
+        case 'documento1':
+          rutaDocumento = 'Actividad_1.docx'; // Define la ruta del documento 1 aquí
+          break;
+        case 'documento2':
+          rutaDocumento = 'Actividad_2.docx'; // Define la ruta del documento 2 aquí
+          break;
+        // Agrega más casos según sea necesario
+        default:
+          rutaDocumento = '';
+      }
+      
+      if (rutaDocumento) {
+        window.open(rutaDocumento);
+      } else {
+        alert('La ruta del documento no está definida.');
+      }
+    }
+  </script>
+<!-- Bootstrap JS y jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
